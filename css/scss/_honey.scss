@@ -1,0 +1,42 @@
+#primary {
+    @extend .col-md-8;
+}
+#secondary {
+    @extend .col-md-4;
+
+    .widget {
+        ul, ol {
+            @extend .list-unstyled;
+            margin-left: 0;
+        }
+
+        .widget-title {
+            font-size: 1.5rem;
+        }
+    }
+}
+
+.site-title, .entry-title {
+    a {
+        color: black;
+        font-size: 2rem;
+    }
+    a:visited {
+        color: black;
+    }
+}
+
+#site-navigation {
+    @extend .navbar, .navbar-light, .bg-light;
+    margin: 2em 0;
+
+    ul.nav-menu {
+        @extend .nav, .nav-pills;
+        li {
+            @extend .nav-item;
+            a {
+                @extend .nav-link;
+            }
+        }
+    }
+}
